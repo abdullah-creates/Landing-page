@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.left {
+    height: 100%;
+    width: 40%;
+    position: relative;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 30px;
+    height: 10px;
+    width: 100%;
+    align-items: center;
+}
+
+.nav .ri-arrow-left-line {
+    cursor: pointer;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-right>a {
+    text-decoration: none;
+    color: #000;
+    margin-right: 18px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.nav-right .ri-twitter-fill {
+    color: dodgerblue;
+    cursor: pointer;
+}
+
+.text-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text-center>h1 {
+    font-size: 90px;
+    font-weight: 900;
+}
+
+.text-center>p {
+    opacity: .6;
+    font-size: 13px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.text-center>a {
+    opacity: .6;
+    font-size: 16px;
+    text-decoration: none;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #000;
+    font-weight: 600;
+    color: #000;
+}
+
+.right {
+    height: 100%;
+    width: 60%;
+    background-color: lightpink;
+}
+
+.top {
+    height: 50%;
+    width: 100%;
+    background-color: fuchsia;
+    display: flex;
+}
+
+.top-left {
+    height: 100%;
+    width: 55%;
+    background-image: url(https://cdn.pixabay.com/photo/2023/11/05/17/13/orange-8367924_1280.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.top-right {
+    height: 100%;
+    width: 45%;
+    background-color: forestgreen;
+    background-image: url(https://cdn.pixabay.com/photo/2017/12/29/16/34/fruit-3048001_1280.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.bottom {
+    height: 50%;
+    width: 100%;
+    background-image: url(https://cdn.pixabay.com/photo/2019/09/02/10/00/lemon-4446934_1280.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+@media (max-width:500px) {
+    .main {
+        flex-direction: column;
+    }
+
+    .left {
+        width: 100%;
+    }
+
+    .right {
+        width: 100%;
+    }
+}
